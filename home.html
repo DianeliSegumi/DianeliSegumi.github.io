@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Diana Segura</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Nunito+Sans:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mitr:wght@200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito+Sans:ital,wght@0,600;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            font-family: Montserrat;
+            font-size: 1.1rem;
+            font-weight: 600;
+
+        }
+
+        header {
+            height: 12vh;
+            background-color: #5cbdac;
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        main {
+            height: 80vh;
+        }
+
+        footer {
+            height: 10vh;
+            background-color: #5cbdac;
+            display: flex;
+
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .Home__nav-container {
+            /* border: 3px solid blue; */
+            width: 50%;
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-nav-link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .main-nav-link:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            ;
+        }
+
+        .Home__img-container {
+            background-image: url('/assets/collage-operaciones-ingresos.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .Home__nav-title {
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .Home__nav-title:hover {
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+
+
+        .Home__name-container {
+            /* border: 3px solid red; */
+            margin-left: 2em;
+
+        }
+
+        .Home__name {
+            color: white;
+            /* border: 3px solid green; */
+        }
+
+        .Home__name h1 {
+            font-family: Lato;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 125%;
+            letter-spacing: 1px;
+            font-style: italic;
+
+        }
+
+        .Home__name p {
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .Home__icons-container {
+            /* border: 3px solid red; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 35em;
+            height: 5em;
+
+
+        }
+
+        .Home__icon-container {
+            /* border: 3px solid green; */
+            width: 3em;
+        }
+
+        .Home__icon {
+            /* border: 3px solid blue; */
+            width: 100%;
+        }
+
+        .Home__about-main-title h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background-color: #5cbdac;
+            color: rgb(255, 255, 255);
+        }
+
+        .Home__parrafos p {
+            font-weight: 500;
+        }
+
+        .Home__about-information {
+            /* border: 6px solid red; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        .Home__about-text-container {
+            width: 50%;
+            /* border: 3px solid red; */
+        }
+
+        .Home__main-img-container {
+            width: 50%;
+            /* border: 3px solid green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Home__inner-img-container {
+            width: 30em;
+            height: 30em;
+
+        }
+
+        .Home__img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /*============ PORTAFOLIO ===============*/
+
+        .Home__caption-portafolio-container {
+            /* border: 3px solid green; */
+        }
+
+        .Home__caption-container {
+            /* border: 2px solid red; */
+        }
+
+        .Home__caption {
+            /* border: 2px solid purple; */
+        }
+
+
+
+
+
+
+        /*=========== MODAL ===========*/
+        /* Estilos generales de la modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            
+            /* Ajusta el z-index a un valor alto */
+            
+        }
+
+        /* Estilos del contenido de la modal */
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 25px;
+            /* max-width: 90em; */
+            width: 80%;
+            height: 80%;
+            overflow: auto;
+        }
+
+        /* Estilos del botón de cierre */
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Estilos adicionales según necesidades específicas */
+        .modal h1 {
+            color: #333;
+        }
+
+        .modal p {
+            color: #666;
+        }
+
+        .Home__modal-img-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .Home__modal-img-container {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Home__modal-data-container{
+            
+            margin-top: 1em;
+            
+        }
+
+        .Home__img-modal {
+            width: 100%;
+            border: 2px solid #5cbdac;
+        }
+        .Home__modal-title-container{
+            
+        }
+        .Home__main-modal-title{
+            font-weight: 700;
+            font-size: 2rem;
+        }
+
+    .Home__inner-modal-img-container{
+        width: 65em;
+        /* margin-left: 6em; */
+    }
+
+        .Home__modal-info-description{
+            /* width: 80em; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    .Home__button-container{
+        /* border: 2px solid red; */
+    }
+        .Home__inside-button-container{
+            /* border: 3px solid blue; */
+        }
+        .Home__inside-button-container button{
+            /* border: 3px solid black; */
+            border: none;
+            background-color: #5cbdac;
+            color: white;
+            padding: .5em;
+            border-radius: 3% 3% 3% 3%;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }   
+
+        .Home__certifications{
+            text-decoration: none;
+            color: black;
+
+        }
+        .Home__certifications:hover{
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* =============== RESPONSIVE =========*/
+
+        @media (max-width: 575.98px) {}
+
+
+        @media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+        @media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .Home__about-information {
+                /* border: 6px solid red; */
+                display: flex;
+                flex-direction: row;
+            }
+
+            .Home__about-text-container {
+                width: 50%;
+                /* border: 3px solid red; */
+            }
+
+            .Home__main-img-container {
+                width: 50%;
+                /* border: 3px solid green; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .Home__inner-img-container {
+                width: 30em;
+                height: 30em;
+
+            }
+
+            .Home__img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        @media (min-width: 1200px) {
+            .Home__nav-socials-icons-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                /* border: 3px solid white; */
+                width: 3.5em;
+            }
+
+            .Home__about-information {
+                /* border: 6px solid red; */
+                display: flex;
+                flex-direction: row;
+                padding: 4em 8em 4em 8em;
+            }
+
+            .Home__about-text-container {
+                width: 50%;
+                /* border: 3px solid red; */
+            }
+
+            .Home__text p {
+                font-size: 1.2rem;
+                line-height: 2.2rem;
+                font-weight: 500;
+            }
+
+            .Home__main-img-container {
+                width: 50%;
+                /* border: 3px solid green; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .Home__inner-img-container {
+                width: 30em;
+                height: 30em;
+
+            }
+
+            .Home__img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .Home__inner-modal-img-container{
+        width: 65em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+        .Home__modal-info-description{
+            width: 80em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+            /*============== PORTAFOLIO ===========*/
+            .Home__caption-portfolio-container {
+                /* border: 3px solid green; */
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin: 0;             
+            }
+
+            .Home__portfolio-information-container {
+                /* border: 3px solid yellow; */
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                width: 100%;
+                margin-top: 3em;
+            }
+
+            .Home__main-caption-container {
+                /* border: 3px solid blue; */
+                box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+                padding: 1em;
+                border-radius: 2em 2em 2em 2em;
+                width: 100%;
+            }
+
+            .Home__inside-caption-container {
+                /* border: 2px solid red; */
+                width: 40em;
+                height: 30em;
+                
+            }
+
+            .Home__caption {
+                /* border: 2px solid purple; */
+                width: 100%;
+                height: 30em;
+                
+            }
+
+            .Home__about-this-project-container {}
+
+            .Home__button-container {}
+
+            .Home__inside-button-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .Home__portfolio-modal {
+                text-decoration: none;
+                color: black;
+                /* border: 3px solid red; */
+                margin-right: 1em;
+            }
+
+            .Home__portfolio-modal:hover {
+                text-decoration: none;
+                color: black;
+            }
+
+
+
+            /*============= CERTIFICATIONS =========*/
+            .Home__certification-title-container {}
+
+            .Home__certification-title-container h1 {}
+
+            .Home__certifications-icons-container {
+                /* border: 3px solid red; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding: 2.5em;
+            }
+
+            .Home__certification-icon-container {
+                /* border: 3px solid green; */
+                width: 10em;
+            }
+
+            .Home__certification-icon {
+                /* border: 3px solid blue; */
+                width: 100%;
+            }
+
+            .Home__certification-description-container {}
+
+            .Home__certification-description-container p {}
+
+            /*========= CONTACT =========*/
+
+
+
+
+
+            /*========== FOOTER ==========*/
+            footer {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .Home__footer-main-container {
+                /* border: 3px solid red; */
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+            }
+
+            .Home__footer-title-container {
+                /* border: 3px solid white; */
+                width: 50%;
+            }
+
+            .Home__footer-title-container p {
+                margin-bottom: 0;
+                color: #fff;
+                margin-left: 1.5em;
+
+            }
+
+            .Home__footer-main-nav-container {
+                /* border: 3px solid green; */
+                width: 50%;
+            }
+
+            .Home__footer-nav-container {
+                margin-right: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="fixed-top navbar navbar-light mt-3 " style="margin: 0; padding: 0;  border: 3px soliod blue;">
+            <div class="container-fluid">
+                <a class="Home__nav-title" href="#home">
+                    Diana Segura
+                </a>
+                <div id="navbarNav" class="Home__nav-container">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="main-nav-link active" aria-current="page" href="#home">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="main-nav-link" href="#aboutMe">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="main-nav-link " href="#MyPortfolio">Mi Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="main-nav-link" href="#MyCertifications">Certificado y estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="Home__nav-socials-icons-container">
+                                <a class="main-nav-link mr-2 ml-2" href="https://www.linkedin.com/in/dsegurami/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a class="main-nav-link mr-2 ml-2" href="https://github.com/DianeliSegumi" target="_blank"><i class="bi bi-github"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="Home__img-container">
+                <div class="Home__name-container">
+                    <div class="Home__name">
+                        <h1>Diana Segura</h1>
+                        <p></p>
+                        <p>
+                            Analista de Datos
+                        </p>
+                        <p></p>
+                        <p>
+                            Explorando el universo de datos: <br />
+                            Descubriendo conocimientos, construyendo estrategias.
+                        </p>
+                        <p></p>
+                        <div class="Home__icons-container">
+                            <div class="Home__icon-container">
+                                <img src="/assets/pbi.png" alt="" class="Home__icon">
+                            </div>
+                            <div class="Home__icon-container">
+                                <img src="/assets/tableau.png" alt="" class="Home__icon">
+                            </div>
+                            <div class="Home__icon-container">
+                                <img src="/assets/excel.png" alt="" class="Home__icon">
+                            </div>
+                            <div class="Home__icon-container">
+                                <img src="/assets//sql.png" alt="" class="Home__icon">
+                            </div>
+                            <div class="Home__icon-container">
+                                <img src="/assets/python.png" alt="" class="Home__icon">
+                            </div>
+                            <div class="Home__icon-container">
+                                <img src="/assets/gsheets.png" alt="" class="Home__icon">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutMe">
+            <div class="Home__about-main-title">
+                <h1 class="text-center pt-5 pb-5">Acerca de mi</h1>
+            </div>
+            <div class="Home__about-information">
+
+                <div class="Home__about-text-container">
+
+                    <div class="Home__text">
+                        <p>
+                            Soy una analista de datos con 4 años de experiencia en la industria de consumo masivo y
+                            marketing. Durante mi
+                            trayectoria en el ámbito de consumo masivo, tuve el privilegio de gestionar reportes de
+                            Business Intelligence (BI) y
+                            manejar inventarios de activos fijos, optimizando la toma de decisiones estratégicas y
+                            asegurando una gestión eficiente
+                            con proveedores. Además, lideré proyectos de transformación digital que permitieron
+                            modernizar procesos y mejorar la
+                            eficacia operativa.
+                        </p>
+                        <p></p>
+                        <p>
+                            Mi paso por una empresa de marketing me brindó la oportunidad de analizar costos y gastos de
+                            transacciones en la
+                            plataforma, así como evaluar la cantidad de transacciones realizadas mensual y anualmente.
+                            Esta experiencia me permitió
+                            desarrollar habilidades críticas para interpretar y presentar datos de manera efectiva,
+                            contribuyendo a la toma de
+                            decisiones informadas y estratégicas
+                        </p>
+                        <p></p>
+                        <p>
+                            Además, mi enfoque incluyó la gestión de reportería de control para depósitos recibidos,
+                            garantizando la precisión y
+                            confiabilidad de la información financiera. Mi compromiso con la excelencia y la mejora
+                            continua me impulsa a buscar
+                            soluciones innovadoras y eficientes para los desafíos empresariales.
+                        </p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="Home__main-img-container">
+                    <div class="Home__inner-img-container">
+                        <img src="/assets/ds.jpeg" alt="" class="Home__img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="MyPortfolio" >
+            <div class="Home__about-main-title">
+                <h1 class="text-center pt-5 pb-5">Mi portafolio</h1>
+            </div>
+            <div class="Home__caption-portfolio-container">
+
+                <div class="Home__portfolio-information-container">
+
+                    <a href="#" class="Home__portfolio-modal" data-target="bicyclesBuyers">
+                        <div class="Home__main-caption-container">
+                            <div class="Home__inside-caption-container">
+                                <img src="/assets/bicyclesBuyers.jpg" alt="" class="Home__caption">
+                            </div>
+                            <div class="Home__about-this-project-container">
+                                <h1>Bicycle Buyers</h1>
+                                <p>
+                                    Análisis de marketing para encontrar el buyer persona
+                                </p>
+                            </div>
+
+                            <div class="Home__button-container">
+                                <div class="Home__inside-button-container">
+                                    <button> Ver Proyecto </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+
+
+                    <a href="#" class="Home__portfolio-modal" data-target="equiposDeFrio">
+                        <div class="Home__main-caption-container">
+                            <div class="Home__inside-caption-container">
+                                <img src="/assets/equiposDeFrio.jpg" alt="" class="Home__caption">
+                            </div>
+                            <div class="Home__about-this-project-container">
+                                <h1>Productividad de Equipos de Frío</h1>
+                                <p>
+                                    Seguimiento de la productividad de los Equipos de Frío 
+                                </p>
+                            </div>
+
+                            <div class="Home__button-container">
+                                <div class="Home__inside-button-container">
+                                    <button> Ver Proyecto </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+                </div>
+
+
+                <div class="Home__portfolio-information-container">
+
+                    <a href="#" class="Home__portfolio-modal" data-target="cobertura">
+                        <div class="Home__main-caption-container">
+                            <div class="Home__inside-caption-container">
+                                <img src="/assets/cobertura.jpg" alt="" class="Home__caption">
+                            </div>
+                            <div class="Home__about-this-project-container">
+                                <h1>Coberturas</h1>
+                                <p>
+                                    Distintas visualizaciones para monitorear el desempeño de las marcas
+                                </p>
+                            </div>
+
+                            <div class="Home__button-container">
+                                <div class="Home__inside-button-container">
+                                    <button> Ver Proyecto </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="Home__portfolio-modal" data-target="billingReview">
+                        <div class="Home__main-caption-container">
+                            <div class="Home__inside-caption-container">
+                                <img src="/assets/billingReview.jpg" alt="" class="Home__caption" ">
+                            </div>
+                            <div class="Home__about-this-project-container">
+                                <h1>Billing Review - Declined Transactions</h1>
+                                <p>
+                                    Dashboard elaborado en Looker para identificar las causas de las transacciones rechazadas
+
+                                </p>
+                            </div>
+
+                            <div class="Home__button-container">
+                                <div class="Home__inside-button-container">
+                                    <button> Ver Proyecto </button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <div class="modal" id="bicyclesBuyers">
+                <div class="modal-content">
+                    <div class="Home__modal-title-container">
+                        <span class="close">&times;</span>
+                        <h2 class="text-center Home__main-modal-title">Acerca del proyecto</h2>
+                    </div>
+                    <div>
+                        <h2>Descripción:</h2>
+                        <p>
+                            Se optó por analizar dos escenarios puntuales, los que compran bicis y 
+                            los que no compran bicis con el objetivo de revisar el comportamiento 
+                            de los clientes pendientes de impactar y de analizar nuestro público actual. 
+                            Para este análisis se eligieron variables para definir al buyer persona como son la edad,
+                            ocupación, sexo, estado civil y gasto promedio. Además se revisó la cantidad de niños en casa
+                            por cliente para revisar si esta variable puede proporcionar un valor adicional al perfil
+                            de buyer persona que deseamos definir.
+
+                            Con las mismas variables se quiso revisar el perfil de los clientes que todavía no son 
+                            compradores de bicicletas. Adicional revisar el % versus maestro de clientes impactados.
+                        </p>
+                    </div>
+                    <div class="Home__modal-img-container">
+                        <div class="Home__inner-modal-img-container">
+                            <div class="Home__modal-data-container">
+                                <div class="Home__inner-modal-img-container">
+                                    <img src="/assets/BuyersModal1.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Resultados:</h2>
+                        <p>
+                            Nuestro buyer persona es un hombre casado mayor de 30 años sin hijos en casa que es un trabajador manual
+                            cualificado. Los compradores de bicicletas dentro de este dataset de ejemplo representa un 55% vs el
+                            maestro total de clientes.
+                            Su contraparte, con un 45% vs el maestro total de clientes es una mujer soltera sin hijos en casa entre los 30-50 
+                            años, que es una trabajadora manual certificada. Estos resultados no solo nos mostraron los perfiles que ya impactamos 
+                            y que todavía no se han impactado con el producto que estamos analizando, que en este caso son bicicletas, sino también 
+                            vemos una segmentación de edad muy marcada. Personas mayores de 30 años con el mismo tipo de oficio cualificado sin niños
+                            en casa. La participación por género está balanceada. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="modal" id="equiposDeFrio">
+                <div class="modal-content">
+                    <div class="Home__modal-title-container">
+                        <span class="close">&times;</span>
+                        <h2 class="text-center Home__main-modal-title">Acerca del proyecto</h2>
+                    </div>
+                    <div>
+                        <h2>Descripción:</h2>
+                        <p>
+                            En este proyecto, se planteaba la necesidad de un panel de control para dar seguimiento a la productividad de los activos fijos de la empresa,
+                             en particular, los equipos de frío (EEFF). Hasta ese momento, solo contaban con un seguimiento mensual para el pago variable de productividad. 
+                             Sin embargo, esta metodología no permitía una medición precisa ni identificaba el desempeño efectivo de los vendedores en el campo al impactar
+                              a los clientes con activos fijos, ya que muchos vendedores concentraban sus esfuerzos en la última semana del mes.
+
+                            La recomendación fue la implementación de un seguimiento semanal del cumplimiento, con un objetivo mínimo del 80% de equipos productivos sobre 
+                            el total de activos fijos del vendedor. Esta revisión se realizaría en las reuniones gerenciales al inicio de la semana. Se incorporó una tabla 
+                            que detallaba la cantidad total de equipos productivos, improductivos y de compra cero por vendedor, proporcionando a los supervisores información
+                             crucial para evaluar el progreso de su fuerza de ventas en las reuniones diarias de seguimiento.
+
+                            Como herramienta para los vendedores, se diseñó una vista detallada de sus clientes, mostrando la cantidad de equipos por cliente, la meta en 
+                            hectolitros y la cantidad de cajas pendientes para alcanzar el objetivo de ventas y considerar el equipo como productivo.
+                        </p>
+                    </div>
+                    <div class="Home__modal-img-container">
+                        <div class="Home__inner-modal-img-container">
+                            <div class="Home__modal-data-container">
+                                <div class="Home__modal-img-container">
+                                    <img src="/assets/equiposDeFrio.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                            <div class="Home__modal-data-container">
+                                <div class="Home__modal-img-container">
+                                    <img src="/assets/modalEquiposDeFrio2.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Resultados:</h2>
+                        <p>
+                            La implementación de esta nueva modalidad de seguimiento nos permitió ajustar la disciplina operativa. 
+                            El equipo se sintió motivado a alcanzar semana a semana el phasing, colocando el enfoque a la visita e impacto 
+                            de los clientes con EEFF. Aumentó la productividad mensual, alcanzando una media del 68% de productividad que 
+                            representa un incremento del 13% versus el año anterior. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="cobertura">
+                <div class="modal-content">
+                    <div class="Home__modal-title-container">
+                        <span class="close">&times;</span>
+                        <h2 class="text-center Home__main-modal-title">Acerca del proyecto</h2>
+                    </div>
+                    <div>
+                        <h2>Descripción:</h2>
+                        <p>
+                            La concepción del proyecto de cobertura por marca surgió con la intención de encontrar el mix ideal para futuras promociones, descuentos y 
+                            ajustes de precios. Su propósito también radica en proporcionar visibilidad sobre el impacto real de nuestra cartera de productos.
+                             Se estableció una representación visual organizada por grupos de marcas (monomarca, bimarca, trimarca y multimarca), cada uno con sus 
+                             respectivos pesos mensuales.
+
+                            Posteriormente, se incorporó una tabla detallando la cantidad de clientes cubiertos y el porcentaje de cobertura para cada posible 
+                            combinación de marcas, atendiendo a una solicitud específica del equipo de marketing y producción.
+                            
+                            Se desarrolló una nueva perspectiva que abarcaba el total de cajas y hectolitros cubiertos por vendedor, desglosado a nivel de cliente, 
+                            marca y SKU, junto con el correspondiente porcentaje de cobertura.
+                            
+                            Finalmente, se creó una vista destinada a la producción que mostraba el porcentaje de SKU vendidos por día. Esta vista incluía los pesos 
+                            asignados a cada SKU para cada día del mes seleccionado, con la posibilidad de filtrar la información por gerente regional, supervisor y vendedor.
+                        </p>
+                    </div>
+                    <div class="Home__modal-img-container">
+                        <div class="Home__inner-modal-img-container">
+                            <div class="Home__modal-data-container">
+                                <div class="Home__modal-img-container">
+                                    <img src="/assets/modalCo0.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                            <div class="Home__modal-data-container">
+                                <div class="Home__modal-img-container">
+                                    <img src="/assets/modalCo2.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                            <div class="Home__modal-data-container">
+                                <div class="Home__modal-img-container">
+                                    <img src="/assets/modalCo1.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Resultados:</h2>
+                        <p>
+                            La visualización de los pesos, organizados por grupos de marca, contribuyó al ajuste de la disciplina operativa. 
+                            Se llevó a cabo una capacitación integral para fortalecer las habilidades de la fuerza de ventas, permitiéndoles 
+                            persuadir de manera efectiva a los clientes e impactar positivamente todas las marcas dentro del portafolio de 
+                            productos. Además, las combinaciones de coberturas impulsaron la creación de nuevos combos, destinados a promover 
+                            las marcas con menor cobertura. La evaluación del avance de las ventas y la estimación del volumen de compra para 
+                            los próximos meses se basaron en el comportamiento de cobertura, con la producción desempeñando un papel clave en 
+                            este proceso. La visualización de la Cobertura por marca se designó como una hoja de seguimiento para revisar el 
+                            rendimiento de los vendedores de forma mensual, trimestral y anual. Por último, el mix de SKU por día facilitó a 
+                            la producción distribuir eficientemente el producto disponible y equilibrar las rutas para abordar cualquier problema
+                            de disponibilidad causado por la sobreventa de cuotas.
+
+
+
+
+
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal" id="billingReview">
+                <div class="modal-content">
+                    <div class="Home__modal-title-container">
+                        <span class="close">&times;</span>
+                        <h2 class="text-center Home__main-modal-title">Acerca del proyecto</h2>
+                    </div>
+                    <div>
+                        <h2>Descripción:</h2>
+                        <p>
+                            Actualmente, uno de los principales desafíos en la empresa reside en la considerable cantidad de transacciones rechazadas durante 
+                            el proceso de facturación. En el pasado, carecíamos de la capacidad para visualizar los detalles de estos rechazos o aprobaciones
+                             de transacciones procesadas. El incremento en el número de transacciones rechazadas por MID tiene un impacto negativo en el 
+                             rendimiento de las campañas. Con la implementación del nuevo CRM, ahora contamos con esta información. En virtud de ello, he propuesto
+                              la creación de un panel de control que analiza, por periodos de fecha, el total de transacciones rechazadas, la cantidad en dólares 
+                              asociada a estos rechazos, la distribución según los tipos de tarjetas utilizadas en estas transacciones, el desglose por producto y MID,
+                               así como las diversas razones proporcionadas por el procesador.
+
+
+
+
+
+
+                        </p>
+                    </div>
+                    <div class="Home__modal-img-container">
+                        <div class="Home__inner-modal-img-container">
+                            <div class="Home__modal-data-container">
+                                <div class="Home__modal-img-container">
+                                    <img src="/assets/billingReview.jpg" alt="" class="Home__img-modal">
+                                </div>
+                                <p>
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Resultados:</h2>
+                        <p>
+                            Al dar seguimiento a estos indicadores, anticipamos la capacidad de identificar las causas subyacentes de la pérdida de transacciones. 
+                            Esto nos permitirá tomar las acciones pertinentes con el objetivo de observar una disminución de dichas pérdidas en los informes subsiguientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </section>
+
+
+        <section id="MyCertifications">
+            <div class="Home__about-main-title mt-5">
+                <h1 class="text-center pt-5 pb-5">Mis certificaciones</h1>
+            </div>
+            <div class="Home__certifications-icons-container">
+
+                <a
+                    href="https://learn.microsoft.com/en-us/users/dianaelizabethseguramiranda-5022/achievements/dgn27d4j" target="_blank" class="Home__certifications">
+                    <div class="Home__certification-icon-container">
+                        <div class="Home__certification-icon">
+                            <img src="assets/data-analytics-and-microsoft.svg" alt="" class="Home__icon">
+                        </div>
+                        <div class="Home__certification-description-container">
+                            <p>
+                                Discover data analysis
+                            </p>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="https://learn.microsoft.com/en-us/users/dianaelizabethseguramiranda-5022/achievements/3xqtdb8h" target="_blank" class="Home__certifications">
+                    <div class="Home__certification-icon-container">
+                        <div class="Home__certification-icon">
+                            <img src="/assets/get-data-power-bi-desktop.svg" alt="" class="Home__icon" >
+                        </div>
+                        <div>
+                            <p>Get data with Power BI Desktop</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="https://learn.microsoft.com/en-us/users/dianaelizabethseguramiranda-5022/achievements/vk6nhvam" target="_blank" class="Home__certifications">
+                    <div class="Home__certification-icon-container">
+                        <div class="Home__certification-icon">
+                            <img src="/assets/get-started-power-bi.svg" alt="" class="Home__icon">
+                        </div>
+                        <div>
+                            <p>Get started building with Power BI</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.credly.com/badges/c9d43ac6-5cf5-4001-9e19-015de8bc6f3d/linked_in?t=s3ot8m" target="_blank" class="Home__certifications">
+                    <div class="Home__certification-icon-container">
+                        <div class="Home__certification-icon">
+                            <img src="/assets/credly.png" alt="" class="Home__icon">
+                        </div>
+                        <div>
+                            <p>Data Analytics Essentials</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-d9106556-622d-46c6-b266-60f9becf3c37.pdf" target="_blank" class="Home__certifications" >
+                    <div class="Home__certification-icon-container">
+                        <div class="Home__certification-icon mt-5">
+                            <img src="/assets/udemy.JPG" alt="" class="Home__icon">
+                        </div>
+                        <div class="mt-5">
+                            <p>Power BI: Empieza desde cero</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="Home__footer-main-container">
+                <div class="Home__footer-title-container">
+                    <p>
+                        Diana Segura  &copy; copyright 2023
+                    </p>
+                </div>
+                <div class="Home__footer-main-nav-container">
+                    <div id="navbarNav" class="Home__footer-nav-container">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="main-nav-link active" aria-current="page" href="#home">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="main-nav-link" href="#aboutMe">Acerca de mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="main-nav-link " href="#MyPortfolio">Mi Portafolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="main-nav-link" href="#MyCertifications">Certificado y estudios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modalTriggers = document.querySelectorAll('.Home__portfolio-modal');
+            var modals = document.querySelectorAll('.modal');
+            var closeModalButtons = document.querySelectorAll('.close');
+
+            function openModal(targetModalId) {
+                var modal = document.getElementById(targetModalId);
+                modal.style.display = 'block';
+            }
+
+            function closeModal(targetModalId) {
+                var modal = document.getElementById(targetModalId);
+                modal.style.display = 'none';
+            }
+
+            modalTriggers.forEach(function (trigger) {
+                trigger.addEventListener('click', function (event) {
+                    event.preventDefault(); // Evitar que el enlace navegue
+                    var targetModalId = trigger.getAttribute('data-target');
+                    openModal(targetModalId);
+                });
+            });
+
+            closeModalButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var targetModalId = button.closest('.modal').id;
+                    closeModal(targetModalId);
+                });
+            });
+
+            window.addEventListener('click', function (event) {
+                if (event.target.classList.contains('modal')) {
+                    var targetModalId = event.target.id;
+                    closeModal(targetModalId);
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
